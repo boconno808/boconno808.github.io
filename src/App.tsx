@@ -3,6 +3,9 @@ import {  BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import './App.css';
 import About from './components/about'
 import Illustration from './components/illustration'
+import Websites from './components/websites'
+import Animation from './components/animation'
+import Introduction from './components/introduction'
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 
@@ -11,13 +14,13 @@ export interface AppProps {
    * Default Page that App will be constructed with.
    * If unspecified, App will be constructed with a Page of 'About'.
    */
-  defaultPageToShow ?: string;
+  //defaultPageToShow ?: string;
 }
 
 /** App state. */
 export interface AppState {
   /** Current page that is being viewed. */
-  pageToShow: string;
+  value: string;
 }
 
   /**
@@ -31,7 +34,7 @@ export interface AppState {
     constructor(props: AppProps) {
       super(props);
       this.state = {
-        pageToShow: this.props.defaultPageToShow || 'About',
+        value: 'About',
       };
     }
 
@@ -40,20 +43,18 @@ export interface AppState {
    * Handles a page change in the Sidebar.
    * @param nextPage string defining the next page to show
    */
-  public handleChangePage = (event: React.ChangeEvent<{value: string}>) => {
-    this.setState({
-      pageToShow: event.target.value,
-    });
-  };
+   handleChangePage = (event: any, value: string) => {
+     this.setState({ value });
+   };
 
   public render() {
-    const { pageToShow } = this.state;
+    const { value } = this.state;
 
     return (
       <div className="App">
       <Router>
           <BottomNavigation
-            value={pageToShow}
+            value={value}
             onChange={this.handleChangePage}
             showLabels
           >
@@ -69,11 +70,22 @@ export interface AppState {
               label='Illustration'
               value='Illustration'
               />
-            <BottomNavigationAction label='Animation' value='Animation'/>
-            <BottomNavigationAction label='Websites' value='Websites'/>
+            <BottomNavigationAction
+              component={Link}
+              to="/animation"
+              label='Animation'
+              value='Animation'/>
+            <BottomNavigationAction
+              component={Link}
+              to='/websites'
+              label='Websites'
+              value='Websites'/>
           </BottomNavigation>
-          <Route exact path="/about" component={About} />
+          <Route exact path="/" component={Introduction} />
+          <Route path="/about" component={About} />
           <Route path="/illustration" component={Illustration} />
+          <Route path="/websites" component={Websites} />
+          <Route path="/animation" component={Animation} />
         </Router>
       </div>
     );
