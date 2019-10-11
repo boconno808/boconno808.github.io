@@ -8,13 +8,11 @@ import Animation from './components/animation'
 import Introduction from './components/introduction'
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
+import Typography from '@material-ui/core/Typography';
+
+//TODO: Fix the padding and props
 
 export interface AppProps {
-  /**
-   * Default Page that App will be constructed with.
-   * If unspecified, App will be constructed with a Page of 'About'.
-   */
-  //defaultPageToShow ?: string;
 }
 
 /** App state. */
@@ -52,6 +50,9 @@ export interface AppState {
 
     return (
       <div className="App">
+        <div className="App-header">
+          <Typography variant= "h2"> Bridgets Portfolio </Typography>
+        </div>
       <Router>
           <BottomNavigation
             value={value}

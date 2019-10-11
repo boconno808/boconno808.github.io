@@ -5,14 +5,17 @@ import Fight from './pictures/fight.png';
 import Game from './pictures/game.png';
 import Swat from './pictures/swat.png';
 import Wakeup from './pictures/WakeUpGirl.png';
-
-
-
+//TODO: Add the embedded video links
+/*
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-pedFJaxXuE"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope;
+    picture-in-picture"></iframe>
+*/
 export const animTileData = [
   {
     imgPath: Chef,
     label: "A Great Chef",
-    materials: "Maya and Photoshop"
+    materials: "Harmony, After Effects, Storyboard Pro, and Photoshop "
   },
   {
     imgPath: Eel,
@@ -22,22 +25,22 @@ export const animTileData = [
   {
     imgPath: Fight,
     label: "Girl Vs Centipede",
-    materials: "Maya and Photoshop"
+    materials: "Adobe Animate"
   },
   {
     imgPath: Game,
     label: "Mini Game",
-    materials: "Maya and Photoshop"
+    materials: "Adobe Animate"
   },
   {
     imgPath: Swat,
     label: "Swat",
-    materials: "Maya and Photoshop"
+    materials: "Adobe Animate"
   },
   {
     imgPath: Wakeup,
-    label: "Wakeup",
-    materials: "Maya and Photoshop"
+    label: "Wake Up",
+    materials: "Adobe Animate"
   },
 ]
 

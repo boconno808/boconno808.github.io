@@ -11,19 +11,24 @@ import { animTileData } from './animTileData';
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
-      maxWidth: 'md',
+      maxWidth: 800,
       flexGrow: 1,
+      padding: theme.spacing(4),
+      margin: 'auto',
     },
     header: {
       display: 'flex',
       alignItems: 'center',
-      height: 50,
-      paddingLeft: theme.spacing(4),
+      height: 75,
       backgroundColor: theme.palette.background.default,
     },
+    headerText: {
+      width: '100%',
+      maxWidth: 800,
+    },
     img: {
-      height: 'auto',
-      maxWidth: 'sm',
+      height: 450,
+      maxWidth: 800,
       overflow: 'hidden',
       display: 'block',
       width: '100%',
@@ -48,7 +53,10 @@ export default function Stepper() {
   return (
     <div className={classes.root}>
       <Paper square elevation={0} className={classes.header}>
-        <Typography>{animTileData[activeStep].label}</Typography>
+        <div className={classes.headerText}>
+        <Typography variant = "subtitle1" gutterBottom>{animTileData[activeStep].label} </Typography>
+        <Typography variant="caption" gutterBottom> Created in : {animTileData[activeStep].materials}</Typography>
+        </div>
       </Paper>
       <img
         className={classes.img}
