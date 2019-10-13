@@ -26,6 +26,19 @@ const useStyles = makeStyles((theme: Theme) =>
       width: '100%',
       maxWidth: 800,
     },
+    video:{
+      position: "relative",
+      paddingBottom: "56.25%" /* 16:9 */,
+      paddingTop: 25,
+      height: 0
+    },
+    iframe:{
+      position: "absolute",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%"
+    },
     img: {
       height: 450,
       maxWidth: 800,
@@ -58,11 +71,15 @@ export default function Stepper() {
         <Typography variant="caption" gutterBottom> Created in : {animTileData[activeStep].materials}</Typography>
         </div>
       </Paper>
-      <img
-        className={classes.img}
-        src={animTileData[activeStep].imgPath}
-        alt={animTileData[activeStep].label}
-      />
+      <div
+      className={classes.video}
+      >
+        <iframe
+          className={classes.iframe}
+          src={`https://www.youtube.com/embed/${animTileData[activeStep].youtubeId}`}
+          frameBorder="0"
+        />
+      </div>
       <MobileStepper
         steps={maxSteps}
         position="static"
