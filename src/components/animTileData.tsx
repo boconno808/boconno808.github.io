@@ -5,12 +5,6 @@ import Fight from './pictures/fight.png';
 import Game from './pictures/game.png';
 import Swat from './pictures/swat.png';
 import Wakeup from './pictures/WakeUpGirl.png';
-//TODO: Add the embedded video links
-/*
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-pedFJaxXuE"
-    allow="accelerometer; autoplay; encrypted-media; gyroscope;
-    picture-in-picture"></iframe>
-*/
 
 export const animTileData = [
   {

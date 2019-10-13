@@ -9,8 +9,10 @@ import Introduction from './components/introduction'
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import Typography from '@material-ui/core/Typography';
+import Paper from '@material-ui/core/Paper';
 
 //TODO: Fix the padding and props
+//TODO: Fix the color of the select on BottomNavigation
 
 export interface AppProps {
 }
@@ -50,9 +52,11 @@ export interface AppState {
 
     return (
       <div className="App">
+      <Paper>
         <div className="App-header">
           <Typography variant= "h2"> Bridgets Portfolio </Typography>
         </div>
+      </Paper>
       <Router>
           <BottomNavigation
             value={value}
