@@ -75,6 +75,7 @@ export default function Stepper() {
       className={classes.video}
       >
         <iframe
+          title={animTileData[activeStep].label}
           className={classes.iframe}
           src={`https://www.youtube.com/embed/${animTileData[activeStep].youtubeId}`}
           frameBorder="0"

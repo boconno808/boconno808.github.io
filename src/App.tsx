@@ -32,7 +32,7 @@ export interface AppState {
     constructor(props: AppProps) {
       super(props);
       this.state = {
-        value: 'About',
+        value: '',
       };
     }
 

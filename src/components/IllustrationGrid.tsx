@@ -4,7 +4,6 @@ import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import { tileData } from './tileData';
-import Container from '@material-ui/core/Container';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -13,10 +12,10 @@ const useStyles = makeStyles((theme: Theme) =>
       flexWrap: 'wrap',
       justifyContent: 'space-around',
       overflow: 'hidden',
-      backgroundColor: theme.palette.background.paper,
+      padding: theme.spacing(4),
     },
-    icon: {
-      color: 'rgba(255, 255, 255, 0.54)',
+    gridList: {
+      maxWidth: 1000,
     },
   }),
 );
@@ -25,8 +24,7 @@ export default function IllustrationGrid() {
   const classes = useStyles({});
   return (
     <div className={classes.root}>
-      <Container maxWidth="md">
-        <GridList cellHeight={360}>
+        <GridList cellHeight={300} cols={3} className={classes.gridList}>
           {tileData.map(tile => (
             <GridListTile key={tile.img}>
               <img src={tile.img} alt={tile.title} />
@@ -37,7 +35,6 @@ export default function IllustrationGrid() {
             </GridListTile>
           ))}
         </GridList>
-      </Container>
     </div>
   );
 }
