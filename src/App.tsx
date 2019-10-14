@@ -3,7 +3,7 @@ import {  BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import './App.css';
 import About from './components/about'
 import Illustration from './components/illustration'
-import Websites from './components/websites'
+import Contact from './components/contact'
 import Animation from './components/animation'
 import Introduction from './components/introduction'
 import BottomNavigation from '@material-ui/core/BottomNavigation';
@@ -80,14 +80,14 @@ export interface AppState {
               value='Animation'/>
             <BottomNavigationAction
               component={Link}
-              to='/websites'
-              label='Websites'
-              value='Websites'/>
+              to='/contact'
+              label='Contact'
+              value='Contact'/>
           </BottomNavigation>
           <Route exact path="/" component={Introduction} />
           <Route path="/about" component={About} />
           <Route path="/illustration" component={Illustration} />
-          <Route path="/websites" component={Websites} />
+          <Route path="/contact" component={Contact} />
           <Route path="/animation" component={Animation} />
         </Router>
       </div>

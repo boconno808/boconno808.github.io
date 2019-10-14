@@ -8,7 +8,7 @@ import Modal from '@material-ui/core/Modal';
 import IconButton from '@material-ui/core/IconButton';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 
-//Functions for the Modal
+//Functions for the Modal fix the modal to add images
 function rand() {
   return Math.round(Math.random() * 20) - 10;
 }
