@@ -2,15 +2,3 @@
   text-align: center;
   background-image: url(./components/pictures/Bg.jpg);
 }
-
-.App-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 50px,
-}
-
-.MuiBottomNavigation-root {
-  color: #000000;
-}
