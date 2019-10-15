@@ -40,14 +40,14 @@ export default function AboutCard() {
           <Divider className={classes.divider} />
           <Typography align='center' variant="body1" paragraph className={classes.paragraph}>
           Bridget O’Connor is an Animation and Computer Science student at Loyola Marymount University
-          who is passionate about eating. She has been drawing from an early age, and gained an interest
-           in CS through her love for computers and puzzling things out. By doing a double degree she
-           hopes to pursue a career combining those two, but her passion for snacking is a pursuit she
+          who is passionate about eating. She gained an interest in CS through her love for computers and
+          puzzling things out, and also enjoys art as well. By doing a double degree she
+           hopes to pursue a career combining those two but more focused in CS. However, her passion for snacking is a pursuit she
             plans to follow with or without a degree.
           </Typography>
           <Typography align='center' variant="body1" gutterBottom>
-          Half Japanese⎯she was born and raised in Honolulu, Hawaii and is also minoring in Asian and
-           Pacific studies. She creates work that she hopes people can find interesting or useful has
+          Half Japanese⎯she was born and raised in Honolulu, Hawai'i and is also minoring in Asian and
+           Pacific studies. She creates work that she hopes people can find interesting or useful. She has
             experience designing and creating pouches and bags, all of which can be used to hold various
              amounts of snacks.
           </Typography>

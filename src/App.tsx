@@ -8,13 +8,16 @@ import Animation from './components/animation'
 import Introduction from './components/introduction'
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-import Typography from '@material-ui/core/Typography';
-import Paper from '@material-ui/core/Paper';
-import { makeStyles, Theme, useTheme, createStyles } from '@material-ui/core/styles';
-import Title from './components/title'
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/styles';
+import { orange } from '@material-ui/core/colors';
 
-//TODO: Fix the padding and props
-//TODO: Fix the color of the select on BottomNavigation
+//TODO: Fix the props
+const theme = createMuiTheme({
+    palette: {
+     primary: { main: orange[700] },
+  },
+});
 
 export interface AppProps {
 }
@@ -55,41 +58,43 @@ export interface AppState {
     return (
       <div className="App">
         <div className="container">
-        <Title/>
           <Router>
-            <BottomNavigation
-              value={value}
-              onChange={this.handleChangePage}
-              showLabels
-            >
-              <BottomNavigationAction
-                component={Link}
-                to="/about"
-                label='About'
-                value='About'
-                />
-              <BottomNavigationAction
-                component={Link}
-                to="/illustration"
-                label='Illustration'
-                value='Illustration'
-                />
-              <BottomNavigationAction
-                component={Link}
-                to="/animation"
-                label='Animation'
-                value='Animation'/>
-              <BottomNavigationAction
-                component={Link}
-                to='/contact'
-                label='Contact'
-                value='Contact'/>
-            </BottomNavigation>
-            <Route exact path="/" component={Introduction} />
-            <Route path="/about" component={About} />
-            <Route path="/illustration" component={Illustration} />
-            <Route path="/contact" component={Contact} />
-            <Route path="/animation" component={Animation} />
+          <ThemeProvider theme={theme}>
+              <BottomNavigation
+                value={value}
+                onChange={this.handleChangePage}
+                showLabels
+                color="primary"
+              >
+                <BottomNavigationAction
+                  component={Link}
+                  to="/about"
+                  label='About'
+                  value='About'
+                  />
+                <BottomNavigationAction
+                  component={Link}
+                  to="/illustration"
+                  label='Illustration'
+                  value='Illustration'
+                  />
+                <BottomNavigationAction
+                  component={Link}
+                  to="/animation"
+                  label='Animation'
+                  value='Animation'/>
+                <BottomNavigationAction
+                  component={Link}
+                  to='/contact'
+                  label='Contact'
+                  value='Contact'/>
+              </BottomNavigation>
+              <Route exact path="/" component={Introduction} />
+              <Route path="/about" component={About} />
+              <Route path="/illustration" component={Illustration} />
+              <Route path="/contact" component={Contact} />
+              <Route path="/animation" component={Animation} />
+            </ThemeProvider>
           </Router>
         </div>
       </div>
