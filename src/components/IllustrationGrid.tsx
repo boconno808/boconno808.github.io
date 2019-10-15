@@ -5,6 +5,7 @@ import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import { tileData } from './tileData';
 import Modal from '@material-ui/core/Modal';
+import Box from '@material-ui/core/Box';
 import IconButton from '@material-ui/core/IconButton';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 
@@ -37,12 +38,12 @@ const useStyles = makeStyles((theme: Theme) =>
       maxWidth: 1000,
     },
     modalPaper: {
-      position: 'absolute',
       maxWidth: 600,
+      position: 'absolute',
       backgroundColor: theme.palette.background.paper,
-      border: '2px solid #000',
       boxShadow: theme.shadows[5],
-      padding: theme.spacing(2, 4, 3),
+      outline: 0,
+      padding: theme.spacing(2),
     },
     icon: {
       color: 'rgba(255, 255, 255, 0.54)',
@@ -74,7 +75,7 @@ export default function IllustrationGrid() {
                 title={tile.title}
                 subtitle={<span>Created in: {tile.materials}</span>}
                 actionIcon={
-                <IconButton aria-label={`info about ${tile.title}`} className={classes.icon} onClick={handleOpen} >
+                <IconButton aria-label={`${tile.title}`} className={classes.icon} onClick={handleOpen} >
                   <VisibilityIcon />
                 </IconButton>
               }
@@ -87,7 +88,7 @@ export default function IllustrationGrid() {
           onClose={handleClose}
         >
           <div style={modalStyle} className={classes.modalPaper}>
-            <p> egg </p>
+              <img style={{maxWidth:'100%'}} src={tileData[0].img} alt={tileData[0].title}/>
           </div>
         </Modal>
     </div>
