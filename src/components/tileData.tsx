@@ -17,7 +17,7 @@ export const tileData = [
 },
 {
   img: Bikes,
-  title: "Bike Pencilcase Design",
+  title: "Bike Pencil Case Design",
   materials: "Photoshop"
 },
 {
@@ -32,7 +32,7 @@ export const tileData = [
 },
 {
   img: Frog,
-  title: "Frog Pencilcase Desgin",
+  title: "Frog Pencil Case Desgin",
   materials: "Photoshop"
 },
 {
@@ -47,7 +47,7 @@ export const tileData = [
 },
 {
   img: Racoon,
-  title: "Racoon Pencilcase Design",
+  title: "Racoon Pencil Case Design",
   materials: "Photoshop"
 },
 {

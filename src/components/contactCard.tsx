@@ -5,55 +5,56 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { Theme, createStyles, makeStyles } from '@material-ui/core/styles';
+import IconButton from '@material-ui/core/IconButton';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import InstagramIcon from '@material-ui/icons/Instagram';
 
 const useStyles = makeStyles((theme: Theme) => createStyles({
-    card: {
-      maxWidth: 800,
+    padding: {
+      flexGrow: 1,
+      padding: theme.spacing(4),
       margin: 'auto',
     },
-    bullet: {
-      display: 'inline-block',
-      margin: '0 2px',
-      transform: 'scale(0.8)',
+    card: {
+      maxWidth: 600,
+      minWidth: 400,
+      margin: 'auto',
     },
-    title: {
-      fontSize: 14,
-    },
-    pos: {
-      marginBottom: 12,
+    icons: {
+      justifyContent: 'center'
     },
   }),
 );
 
 export default function ContactCard() {
   const classes = useStyles({});
-  const bull = <span className={classes.bullet}>•</span>;
 
   return (
-    <Card className={classes.card}>
-      <CardContent>
-        <Typography className={classes.title} color="textSecondary" gutterBottom>
-          Word of the Day
-        </Typography>
-        <Typography variant="h5" component="h2">
-          be
-          {bull}
-          nev
-          {bull}o{bull}
-          lent
-        </Typography>
-        <Typography className={classes.pos} color="textSecondary">
-          adjective
-        </Typography>
-        <Typography variant="body2" component="p">
-          well meaning and kindly.
-          <br />
-          {'"a benevolent smile"'}
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>
+    <div className={classes.padding}>
+      <Card className={classes.card}>
+        <CardContent>
+          <Typography variant="h5" gutterBottom>
+            Contact
+          </Typography>
+          <Typography variant="subtitle1" gutterBottom>
+            I'd love to talk with you about anything!
+          </Typography>
+          <Typography variant= "body2" color="textSecondary">
+            808-352-7368
+          </Typography>
+          <Typography variant="body2" component="p">
+            boconno9@lion.lmu.edu
+          </Typography>
+        </CardContent>
+        <CardActions className={classes.icons}>
+          <IconButton aria-label={`linkedIn`} >
+            <LinkedInIcon />
+          </IconButton>
+          <IconButton aria-label={`instagram`} >
+            <InstagramIcon />
+          </IconButton>
+        </CardActions>
+      </Card>
+    </div>
   );
 }
