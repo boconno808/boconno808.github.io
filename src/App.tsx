@@ -54,42 +54,44 @@ export interface AppState {
 
     return (
       <div className="App">
-      <Title/>
-      <Router>
-          <BottomNavigation
-            value={value}
-            onChange={this.handleChangePage}
-            showLabels
-          >
-            <BottomNavigationAction
-              component={Link}
-              to="/about"
-              label='About'
-              value='About'
-              />
-            <BottomNavigationAction
-              component={Link}
-              to="/illustration"
-              label='Illustration'
-              value='Illustration'
-              />
-            <BottomNavigationAction
-              component={Link}
-              to="/animation"
-              label='Animation'
-              value='Animation'/>
-            <BottomNavigationAction
-              component={Link}
-              to='/contact'
-              label='Contact'
-              value='Contact'/>
-          </BottomNavigation>
-          <Route exact path="/" component={Introduction} />
-          <Route path="/about" component={About} />
-          <Route path="/illustration" component={Illustration} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/animation" component={Animation} />
-        </Router>
+        <div className="container">
+        <Title/>
+          <Router>
+            <BottomNavigation
+              value={value}
+              onChange={this.handleChangePage}
+              showLabels
+            >
+              <BottomNavigationAction
+                component={Link}
+                to="/about"
+                label='About'
+                value='About'
+                />
+              <BottomNavigationAction
+                component={Link}
+                to="/illustration"
+                label='Illustration'
+                value='Illustration'
+                />
+              <BottomNavigationAction
+                component={Link}
+                to="/animation"
+                label='Animation'
+                value='Animation'/>
+              <BottomNavigationAction
+                component={Link}
+                to='/contact'
+                label='Contact'
+                value='Contact'/>
+            </BottomNavigation>
+            <Route exact path="/" component={Introduction} />
+            <Route path="/about" component={About} />
+            <Route path="/illustration" component={Illustration} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/animation" component={Animation} />
+          </Router>
+        </div>
       </div>
     );
   }

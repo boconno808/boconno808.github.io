@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme: Theme) =>
     root: {
       maxWidth: 800,
       flexGrow: 1,
-      padding: theme.spacing(4),
+      padding: theme.spacing(6),
       margin: 'auto',
     },
     header: {

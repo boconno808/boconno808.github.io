@@ -20,7 +20,7 @@ export default function Title() {
   return (
     <Paper className={classes.paper}>
       <div className={classes.header}>
-        <Typography variant= "h2"> Bridgets Portfolio </Typography>
+        <Typography variant= "h4"> Bridgets Portfolio </Typography>
       </div>
     </Paper>
   );

@@ -8,7 +8,7 @@ import Divider from '@material-ui/core/Divider';
 const useStyles = makeStyles((theme: Theme) => createStyles({
     padding: {
       flexGrow: 1,
-      padding: theme.spacing(4),
+      padding: theme.spacing(6),
       margin: 'auto',
     },
     card: {

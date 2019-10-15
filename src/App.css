@@ -2,3 +2,9 @@
   text-align: center;
   background-image: url(./components/pictures/Bg.jpg);
 }
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
