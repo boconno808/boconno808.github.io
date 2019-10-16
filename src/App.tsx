@@ -12,15 +12,11 @@ import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import { orange } from '@material-ui/core/colors';
 
-//TODO: Fix the props
 const theme = createMuiTheme({
     palette: {
      primary: { main: orange[700] },
   },
 });
-
-export interface AppProps {
-}
 
 /** App state. */
 export interface AppState {
@@ -33,10 +29,10 @@ export interface AppState {
    * dropdown selection and a Select All tri-state checkbox.
    */
   export class App extends React.Component<
-    AppProps,
+    {},
     AppState
   > {
-    constructor(props: AppProps) {
+    constructor(props: {}) {
       super(props);
       this.state = {
         value: '',
