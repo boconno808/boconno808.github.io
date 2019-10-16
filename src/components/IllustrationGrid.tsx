@@ -52,7 +52,7 @@ export default function IllustrationGrid() {
 
   return (
     <div className={classes.root}>
-        <GridList cellHeight={300} cols={3} className={classes.gridList}>
+        <GridList cellHeight={250} cols={3} className={classes.gridList}>
           {tileData.map(tile => (
             <GridListTile key={tile.img}>
               <img src={tile.img} alt={tile.title}/>

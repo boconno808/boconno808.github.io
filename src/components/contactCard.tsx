@@ -8,6 +8,7 @@ import IconButton from '@material-ui/core/IconButton';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import Divider from '@material-ui/core/Divider';
+import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles((theme: Theme) => createStyles({
     padding: {
@@ -17,14 +18,16 @@ const useStyles = makeStyles((theme: Theme) => createStyles({
     },
     card: {
       maxWidth: 600,
-      minWidth: 400,
       margin: 'auto',
     },
     icons: {
       justifyContent: 'center'
     },
     mailbox: {
-      paddingLeft: 60,
+      display: 'flex',
+      flexWrap: 'wrap',
+      justifyContent: 'space-around',
+      overflow: 'hidden',
     },
     divider: {
       maxWidth: 100,
@@ -43,7 +46,9 @@ export default function ContactCard() {
       <div className={classes.padding}>
         <Card className={classes.card}>
           <CardContent>
-            <img className={classes.mailbox} src={require('./pictures/mailbox.png')} alt='mailbox'/>
+            <Grid className={classes.mailbox}>
+            <img src={require('./pictures/mailbox.png')} alt='mailbox'/>
+            </Grid>
             <Typography variant="h5">
               Contact
             </Typography>

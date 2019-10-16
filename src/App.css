@@ -7,4 +7,10 @@
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  overflow-x: auto;
+}
+
+.bottomNav {
+  display: flex;
+  overflow-x: auto;
 }

@@ -61,6 +61,7 @@ export interface AppState {
                 onChange={this.handleChangePage}
                 showLabels
                 color="primary"
+                className = "bottomNav"
               >
                 <BottomNavigationAction
                   component={Link}

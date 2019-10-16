@@ -4,6 +4,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import { Theme, createStyles, makeStyles } from '@material-ui/core/styles';
 import Divider from '@material-ui/core/Divider';
+import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles((theme: Theme) => createStyles({
     padding: {
@@ -13,8 +14,13 @@ const useStyles = makeStyles((theme: Theme) => createStyles({
     },
     card: {
       maxWidth: 600,
-      minWidth: 400,
       margin: 'auto',
+    },
+    face: {
+      display: 'flex',
+      flexWrap: 'wrap',
+      justifyContent: 'space-around',
+      overflow: 'hidden',
     },
     paragraph:{
       paddingTop: theme.spacing(2),
@@ -31,7 +37,9 @@ export default function AboutCard() {
 
   return (
     <div className={classes.padding}>
-    <img src={require('./pictures/linkedin.png')} alt='selfPortrait' />
+    <Grid className={classes.face}>
+      <img src={require('./pictures/linkedin.png')} alt='selfPortrait' />
+    </Grid>
       <Card className={classes.card}>
         <CardContent>
           <Typography variant="h5">
