@@ -43,7 +43,7 @@ export default function ContactCard() {
       <div className={classes.padding}>
         <Card className={classes.card}>
           <CardContent>
-            <img className={classes.mailbox} src={require('./pictures/mailbox.png')} />
+            <img className={classes.mailbox} src={require('./pictures/mailbox.png')} alt='mailbox'/>
             <Typography variant="h5">
               Contact
             </Typography>
@@ -59,10 +59,10 @@ export default function ContactCard() {
             </Typography>
           </CardContent>
           <CardActions className={classes.icons}>
-            <IconButton aria-label={`linkedIn`} >
+            <IconButton aria-label={`linkedIn`} target="_blank" href="https://www.linkedin.com/in/bridgetoco/">
               <LinkedInIcon />
             </IconButton>
-            <IconButton aria-label={`instagram`} >
+            <IconButton aria-label={`instagram`} target="_blank" href="https://www.instagram.com/bridgetoconno/">
               <InstagramIcon />
             </IconButton>
           </CardActions>

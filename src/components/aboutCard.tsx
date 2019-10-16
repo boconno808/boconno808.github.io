@@ -31,7 +31,7 @@ export default function AboutCard() {
 
   return (
     <div className={classes.padding}>
-    <img src={require('./pictures/linkedin.png')} />
+    <img src={require('./pictures/linkedin.png')} alt='selfPortrait' />
       <Card className={classes.card}>
         <CardContent>
           <Typography variant="h5">

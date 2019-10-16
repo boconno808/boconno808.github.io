@@ -5,25 +5,12 @@ import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import { tileData } from './tileData';
 import Modal from '@material-ui/core/Modal';
-import Box from '@material-ui/core/Box';
 import IconButton from '@material-ui/core/IconButton';
 import VisibilityIcon from '@material-ui/icons/Visibility';
+import GetModalStyle from './getModalStyle';
 
+//Need to make state to hold the current tile selected
 //Functions for the Modal fix the modal to add images
-function rand() {
-  return Math.round(Math.random() * 20) - 10;
-}
-
-function getModalStyle() {
-  const top = 50 + rand();
-  const left = 50 + rand();
-
-  return {
-    top: `${top}%`,
-    left: `${left}%`,
-    transform: `translate(-${top}%, -${left}%)`,
-  };
-}
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -54,7 +41,7 @@ const useStyles = makeStyles((theme: Theme) =>
 export default function IllustrationGrid() {
   const classes = useStyles({});
 
-  const [modalStyle] = React.useState(getModalStyle);
+  const [modalStyle] = React.useState(GetModalStyle);
   const [open, setOpen] = React.useState(false);
 
   const handleOpen = () => {
@@ -64,6 +51,8 @@ export default function IllustrationGrid() {
   const handleClose = () => {
     setOpen(false);
   };
+
+  const [count, setCount] = React.useState(0);
 
   return (
     <div className={classes.root}>
@@ -75,7 +64,12 @@ export default function IllustrationGrid() {
                 title={tile.title}
                 subtitle={<span>Created in: {tile.materials}</span>}
                 actionIcon={
-                <IconButton aria-label={`${tile.title}`} className={classes.icon} onClick={handleOpen} >
+                <IconButton aria-label={`${tile.title}`}
+                  className={classes.icon}
+                  onClick={() => {
+                    setOpen(true);
+                    setCount(tile.index);
+                  }} >
                   <VisibilityIcon />
                 </IconButton>
               }
@@ -88,7 +82,7 @@ export default function IllustrationGrid() {
           onClose={handleClose}
         >
           <div style={modalStyle} className={classes.modalPaper}>
-              <img style={{maxWidth:'100%'}} src={tileData[0].img} alt={tileData[0].title}/>
+              <img style={{maxWidth:'100%'}} src={tileData[count].img} alt={tileData[0].title}/>
           </div>
         </Modal>
     </div>
