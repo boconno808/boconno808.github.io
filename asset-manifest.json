@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.94c67961.chunk.css",
-    "main.js": "/portfolio/static/js/main.3baf668d.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.3baf668d.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.841b2085.chunk.css",
+    "main.js": "/portfolio/static/js/main.71013321.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.71013321.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.7676bd13.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.7676bd13.js.map",
-    "static/js/2.b4a96acf.chunk.js": "/portfolio/static/js/2.b4a96acf.chunk.js",
-    "static/js/2.b4a96acf.chunk.js.map": "/portfolio/static/js/2.b4a96acf.chunk.js.map",
+    "static/js/2.9bfe4bd5.chunk.js": "/portfolio/static/js/2.9bfe4bd5.chunk.js",
+    "static/js/2.9bfe4bd5.chunk.js.map": "/portfolio/static/js/2.9bfe4bd5.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.8aa83594f1a78220ccdbd3a1ad6d923a.js": "/portfolio/precache-manifest.8aa83594f1a78220ccdbd3a1ad6d923a.js",
+    "precache-manifest.0d696e0e9a40cebf74ed4586dc088a95.js": "/portfolio/precache-manifest.0d696e0e9a40cebf74ed4586dc088a95.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.94c67961.chunk.css.map": "/portfolio/static/css/main.94c67961.chunk.css.map",
+    "static/css/main.841b2085.chunk.css.map": "/portfolio/static/css/main.841b2085.chunk.css.map",
     "static/media/App.css": "/portfolio/static/media/Bg.e994d1b1.jpg",
     "static/media/WakeUpGirl.png": "/portfolio/static/media/WakeUpGirl.6648538f.png",
     "static/media/athens.jpg": "/portfolio/static/media/athens.3a9a909f.jpg",
@@ -24,7 +24,7 @@
     "static/media/greatchef.png": "/portfolio/static/media/greatchef.6538a3f0.png",
     "static/media/lifeDrawings.jpg": "/portfolio/static/media/lifeDrawings.c98e183c.jpg",
     "static/media/linkedin.png": "/portfolio/static/media/linkedin.238e30ef.png",
-    "static/media/mailbox.png": "/portfolio/static/media/mailbox.ee963b64.png",
+    "static/media/mailbox.png": "/portfolio/static/media/mailbox.193dabde.png",
     "static/media/painting.jpg": "/portfolio/static/media/painting.51cbe290.jpg",
     "static/media/penart.png": "/portfolio/static/media/penart.f0eaff9c.png",
     "static/media/racoon.jpeg": "/portfolio/static/media/racoon.db89569e.jpeg",
@@ -32,8 +32,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.7676bd13.js",
-    "static/js/2.b4a96acf.chunk.js",
-    "static/css/main.94c67961.chunk.css",
-    "static/js/main.3baf668d.chunk.js"
+    "static/js/2.9bfe4bd5.chunk.js",
+    "static/css/main.841b2085.chunk.css",
+    "static/js/main.71013321.chunk.js"
   ]
 }
