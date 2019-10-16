@@ -1,4 +1,3 @@
-import * as React from 'react'
 import Athens from './pictures/athens.jpg'
 import Bikes from './pictures/bikes.png'
 import Cranes from './pictures/cranes.png'

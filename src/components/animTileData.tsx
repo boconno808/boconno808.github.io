@@ -1,4 +1,3 @@
-import * as React from 'react'
 import Eel from './pictures/eel.png';
 import Chef from './pictures/greatchef.png';
 import Fight from './pictures/fight.png';

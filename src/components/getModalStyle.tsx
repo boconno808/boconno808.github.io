@@ -1,5 +1,3 @@
-import * as React from 'react';
-
 export default function GetModalStyle() {
   const top = 50;
   const left = 50;

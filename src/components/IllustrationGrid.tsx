@@ -44,10 +44,6 @@ export default function IllustrationGrid() {
   const [modalStyle] = React.useState(GetModalStyle);
   const [open, setOpen] = React.useState(false);
 
-  const handleOpen = () => {
-    setOpen(true);
-  };
-
   const handleClose = () => {
     setOpen(false);
   };
