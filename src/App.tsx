@@ -64,32 +64,32 @@ export interface AppState {
               >
                 <BottomNavigationAction
                   component={Link}
-                  to="/about"
+                  to="/portfolio/about"
                   label='About'
                   value='About'
                   />
                 <BottomNavigationAction
                   component={Link}
-                  to="/illustration"
+                  to="/portfolio/illustration"
                   label='Illustration'
                   value='Illustration'
                   />
                 <BottomNavigationAction
                   component={Link}
-                  to="/animation"
+                  to="/portfolio/animation"
                   label='Animation'
                   value='Animation'/>
                 <BottomNavigationAction
                   component={Link}
-                  to='/contact'
+                  to='/portfolio/contact'
                   label='Contact'
                   value='Contact'/>
               </BottomNavigation>
-              <Route exact path="/" component={Introduction} />
-              <Route path="/about" component={About} />
-              <Route path="/illustration" component={Illustration} />
-              <Route path="/contact" component={Contact} />
-              <Route path="/animation" component={Animation} />
+              <Route exact path="/portfolio" component={Introduction} />
+              <Route path="/portfolio/about" component={About} />
+              <Route path="/portfolio/illustration" component={Illustration} />
+              <Route path="/portfolio/contact" component={Contact} />
+              <Route path="/portfolio/animation" component={Animation} />
             </ThemeProvider>
           </Router>
         </div>
