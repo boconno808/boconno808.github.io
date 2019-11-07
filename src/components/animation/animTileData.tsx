@@ -1,9 +1,9 @@
-import Eel from './pictures/eel.png';
-import Chef from './pictures/greatchef.png';
-import Fight from './pictures/fight.png';
-import Game from './pictures/game.png';
-import Swat from './pictures/swat.png';
-import Wakeup from './pictures/WakeUpGirl.png';
+import Eel from '../pictures/eel.png';
+import Chef from '../pictures/greatchef.png';
+import Fight from '../pictures/fight.png';
+import Game from '../pictures/game.png';
+import Swat from '../pictures/swat.png';
+import Wakeup from '../pictures/WakeUpGirl.png';
 
 export const animTileData = [
   {

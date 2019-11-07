@@ -1,10 +1,11 @@
 import * as React from 'react';
 import {  BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import './App.css';
-import About from './components/about'
-import Illustration from './components/illustration'
+import About from './components/about/about'
+import Prototype from './components/prototype/prototype';
+import Illustration from './components/illustration/illustration'
 import Contact from './components/contact'
-import Animation from './components/animation'
+import Animation from './components/animation/animation'
 import Introduction from './components/introduction'
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
@@ -82,6 +83,11 @@ export interface AppState {
                   value='Animation'/>
                 <BottomNavigationAction
                   component={Link}
+                  to="/portfolio/prototype"
+                  label='Prototypes'
+                  value='Prototype'/>
+                <BottomNavigationAction
+                  component={Link}
                   to='/portfolio/contact'
                   label='Contact'
                   value='Contact'/>
@@ -91,6 +97,7 @@ export interface AppState {
               <Route path="/portfolio/illustration" component={Illustration} />
               <Route path="/portfolio/contact" component={Contact} />
               <Route path="/portfolio/animation" component={Animation} />
+              <Route path="/portfolio/prototype" component={Prototype} />
             </ThemeProvider>
           </Router>
         </div>

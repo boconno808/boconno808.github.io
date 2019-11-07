@@ -38,7 +38,7 @@ export default function AboutCard() {
   return (
     <div className={classes.padding}>
     <Grid className={classes.face}>
-      <img src={require('./pictures/linkedin.png')} alt='selfPortrait' />
+      <img src={require('../pictures/linkedin.png')} alt='selfPortrait' />
     </Grid>
       <Card className={classes.card}>
         <CardContent>
