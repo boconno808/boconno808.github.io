@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bc04e4facfe0bd312027fe45cf1b8870",
+    "revision": "8ed50a27f9adb5b447e166cf95bf1282",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "b769c496efc0e1fd4936",
+    "revision": "de59aea8efdb12165091",
     "url": "/portfolio/static/css/main.841b2085.chunk.css"
   },
   {
-    "revision": "950fa1cd8628641e6e08",
-    "url": "/portfolio/static/js/2.9bfe4bd5.chunk.js"
+    "revision": "cd85b5b1a8e9234cd746",
+    "url": "/portfolio/static/js/2.ea9b67da.chunk.js"
   },
   {
-    "revision": "b769c496efc0e1fd4936",
-    "url": "/portfolio/static/js/main.71013321.chunk.js"
+    "revision": "de59aea8efdb12165091",
+    "url": "/portfolio/static/js/main.e6e1e7c9.chunk.js"
   },
   {
     "revision": "c5306228cc83f6f6271c",
@@ -34,6 +34,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d836bfeaaeeb02044b2acadf6fff922d",
     "url": "/portfolio/static/media/bikes.d836bfea.png"
+  },
+  {
+    "revision": "629e6827033ae408f465943243788881",
+    "url": "/portfolio/static/media/cafree.629e6827.png"
   },
   {
     "revision": "61a0f1a130cc9fe73e6cb32dbd3d9ab0",
