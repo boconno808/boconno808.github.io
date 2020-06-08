@@ -56,10 +56,7 @@ export default function ContactCard() {
             <Typography variant="subtitle1" gutterBottom>
               I'd love to talk with you about anything!
             </Typography>
-            <Typography variant= "body2" color="textSecondary" className={classes.paddingPhone}>
-              82-010-4277-2999
-            </Typography>
-            <Typography variant="body2" component="p">
+            <Typography variant="body2" component="p" className={classes.paddingPhone}>
               boconno9@lion.lmu.edu
             </Typography>
           </CardContent>
