@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.2a7d4344.chunk.css",
-    "main.js": "/portfolio/static/js/main.f69c0d1d.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.f69c0d1d.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.fb1b3dac.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.fb1b3dac.js.map",
-    "static/js/2.93514f0c.chunk.js": "/portfolio/static/js/2.93514f0c.chunk.js",
-    "static/js/2.93514f0c.chunk.js.map": "/portfolio/static/js/2.93514f0c.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.c3055801.chunk.css",
+    "main.js": "/portfolio/static/js/main.c5231953.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.c5231953.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
+    "static/js/2.1b318a45.chunk.js": "/portfolio/static/js/2.1b318a45.chunk.js",
+    "static/js/2.1b318a45.chunk.js.map": "/portfolio/static/js/2.1b318a45.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.4ab9e6f5c5e9ed772065d1a0c2c8b2f2.js": "/portfolio/precache-manifest.4ab9e6f5c5e9ed772065d1a0c2c8b2f2.js",
+    "precache-manifest.93853bca86dbec144451f98d84723683.js": "/portfolio/precache-manifest.93853bca86dbec144451f98d84723683.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.2a7d4344.chunk.css.map": "/portfolio/static/css/main.2a7d4344.chunk.css.map",
-    "static/js/2.93514f0c.chunk.js.LICENSE.txt": "/portfolio/static/js/2.93514f0c.chunk.js.LICENSE.txt",
+    "static/css/main.c3055801.chunk.css.map": "/portfolio/static/css/main.c3055801.chunk.css.map",
+    "static/js/2.1b318a45.chunk.js.LICENSE.txt": "/portfolio/static/js/2.1b318a45.chunk.js.LICENSE.txt",
     "static/media/App.css": "/portfolio/static/media/Bg.e994d1b1.jpg",
     "static/media/WakeUpGirl.png": "/portfolio/static/media/WakeUpGirl.6648538f.png",
     "static/media/athens.jpg": "/portfolio/static/media/athens.3a9a909f.jpg",
@@ -33,9 +33,9 @@
     "static/media/swat.png": "/portfolio/static/media/swat.89dce72d.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.fb1b3dac.js",
-    "static/js/2.93514f0c.chunk.js",
-    "static/css/main.2a7d4344.chunk.css",
-    "static/js/main.f69c0d1d.chunk.js"
+    "static/js/runtime-main.209c2d7e.js",
+    "static/js/2.1b318a45.chunk.js",
+    "static/css/main.c3055801.chunk.css",
+    "static/js/main.c5231953.chunk.js"
   ]
 }
